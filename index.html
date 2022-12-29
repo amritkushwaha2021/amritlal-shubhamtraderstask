@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    /* Add some styling for the calculator */
+    .calculator {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .calculator input[type="text"] {
+      width: 70%;
+      height: 50px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 2px solid black;
+      text-align: right;
+    }
+    .calculator input[type="button"] {
+      width: 70px;
+      height: 50px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      border: none;
+      background-color: lightgray;
+    }
+    .calculator input[type="button"]:hover {
+      background-color: rgb(2, 179, 176);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <!-- Create a form for the calculator -->
+    <form>
+      <!-- Create an input field for the result -->
+      <input type="text" name="result" value="" disabled>
+      <!-- Create a table for the buttons -->
+      <table>
+        <tr>
+          <td><input type="button" value="7" onclick="addValue(7)"></td>
+          <td><input type="button" value="8" onclick="addValue(8)"></td>
+          <td><input type="button" value="9" onclick="addValue(9)"></td>
+          <td><input type="button" value="+" onclick="addValue('+')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4" onclick="addValue(4)"></td>
+          <td><input type="button" value="5" onclick="addValue(5)"></td>
+          <td><input type="button" value="6" onclick="addValue(6)"></td>
+          <td><input type="button" value="-" onclick="addValue('-')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1" onclick="addValue(1)"></td>
+          <td><input type="button" value="2" onclick="addValue(2)"></td>
+          <td><input type="button" value="3" onclick="addValue(3)"></td>
+          <td><input type="button" value="*" onclick="addValue('*')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="C" onclick="clearResult()"></td>
+          <td><input type="button" value="0" onclick="addValue(0)"></td>
+          <td><input type="button" value="=" onclick="calculateResult()"></td>
+          <td><input type="button" value="/" onclick="addValue('/')"></td>
+        </tr>
+      </table>
+    </form>
