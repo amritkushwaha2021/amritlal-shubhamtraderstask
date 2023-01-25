@@ -103,7 +103,7 @@ input[type="text"],
 /* to make the page responsive*/
 @media only screen and (max-width: 600px) {
     .container-small {
-        width: 80%;
+        width: 65%;
     }
 
     .container-small input[type="email"],
